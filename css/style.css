@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        @apply bg-slate-100
+        /* bg-[url('/img/footer/bg-footer.png')] relative  bg-no-repeat bg-bottom bg-contain */
+    }
+}
+
+@layer components{
+
+    .wrap-header{
+       @apply bg-gradient-to-r from-blue-950    to-pink-600  min-h-96 space-y-3 
+    }
+
+    .nav{
+        @apply flex flex-row justify-between p-4
+    }
+
+    .header-content{
+        @apply flex flex-col md:flex-row gap-4 px-4 items-center self-center  mx-auto
+    }
+    .brand{
+        @apply font-bold text-2xl bg-gradient-to-r from-yellow-600 to-amber-400 bg-clip-text text-transparent ;
+    }
+
+    .btn-link {
+        @apply   px-5 py-1 rounded-full text-white hover:bg-indigo-800 hover:bg-opacity-70
+        hover:text-amber-400 hover:shadow hover:shadow-md 
+        transition duration-300 active:bg-slate-700 active:text-white;
+    }
+
+    .btn-login{
+       @apply bg-gradient-to-r from-amber-500 to-amber-400 px-4 py-1 rounded-xl font-semibold text-slate-700 shadow shadow-md hover:from-indigo-500 hover:to-indigo-800 hover:text-white transition duration-300
+       active:from-indigo-900 active:to-indigo-900 active:text-white
+    }
+
+    .text-typed{
+        @apply text-amber-400
+    }
+
+
+    .wrap-section2{
+        @apply grid grid-cols-1 gap-4 p-4  mx-auto  mt-2
+        md:grid-cols-3 md:-mt-16  md:w-3/4 md:gap-8
+       
+    }
+
+    .card{
+      @apply h-full  bg-slate-50  text-slate-700 flex flex-row border border-slate-200  rounded-xl  p-4 items-center self-center  shadow hover:bg-slate-200 cursor-pointer transition duration-300
+    }
+
+    .img-rounded{
+        @apply rounded-full shadow h-14 w-14  object-cover border border-slate-300
+    }
+
+    .wrap-section{
+        @apply grid grid-cols-1 gap-4 p-4  mx-auto  mt-2
+       
+    }
+
+
+    .card-portofolio{
+        @apply bg-white overflow-hidden rounded-xl border border-slate-200 hover:bg-slate-100 cursor-pointer
+    }
+
+    .footer{
+        @apply flex flex-col md:flex-row justify-between  items-center
+    }
+    
+}
