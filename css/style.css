@@ -67,8 +67,11 @@
         @apply bg-white overflow-hidden rounded-xl border border-slate-200 hover:bg-slate-100 cursor-pointer
     }
 
+    .input{
+        @apply w-full focus:outline-none border border-slate-300 px-4 py-1 rounded-lg;
+    }
     .footer{
-        @apply flex flex-col md:flex-row justify-between  items-center
+        @apply flex flex-col md:flex-row justify-between  items-center gap-3
     }
     
 }
